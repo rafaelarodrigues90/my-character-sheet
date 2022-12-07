@@ -1,19 +1,21 @@
 import { StatusBar } from "expo-status-bar";
-import { ImageBackground } from "react-native";
+import { ThemeProvider } from "styled-components";
+import {
+  useFonts,
+  MedievalSharp_400Regular,
+} from "@expo-google-fonts/medievalsharp";
+import theme from "./src/assets/styles";
 import Menu from "./src/pages/menu";
-import image from "./src/assets/background.jpg";
 
 export default function App(): JSX.Element {
+  const [fontsLoaded] = useFonts({ MedievalSharp_400Regular });
+
   return (
     <>
-      <ImageBackground
-        source={image}
-        resizeMode="cover"
-        style={{ flex: 1, justifyContent: "center" }}
-      >
+      <ThemeProvider theme={theme}>
+        {fontsLoaded && <Menu />}
         <StatusBar hidden />
-        <Menu />
-      </ImageBackground>
+      </ThemeProvider>
     </>
   );
 }

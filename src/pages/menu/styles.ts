@@ -1,33 +1,34 @@
 import styled from 'styled-components/native'
 
-export const ScreenContainer = styled.SafeAreaView`
+export const ImageContainer = styled.View`
   flex: 1;
-  padding: 24px;
+  justify-content: center;
+  background: #f2f2f2;
 `
 
 export const MainContainer = styled.View`
   flex: 1;
   flex-direction: column;
-  margin: 30px 0px;
   justify-content: center;
   align-items: center;
 `
 export const MenuTitle = styled.Text`
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 50px;
+  text-align: center;
+  font-family: ${({ theme }) => theme.fontFamily.medievalSharp};
 `
 export const ButtonContainer = styled.TouchableOpacity`
-  background: white;
+  background: #fafafa;
   border: 2px solid black;
   border-radius: 5px;
   padding: 10px 25px;
-  margin: 15px 0px;
+  margin: 10px 0px;
 `
 
 export const ButtonText = styled.Text`
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 20px;
   text-transform: uppercase;
   color: black;
-  font-style: italic;
+  font-family: ${({ theme }) => theme.fontFamily.medievalSharp};
 `
