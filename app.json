@@ -1,18 +1,6 @@
 {
   "expo": {
     "name": "my-character-sheet",
-    "slug": "my-character-sheet",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "userInterfaceStyle": "light",
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    }
+    "slug": "my-character-sheet"
   }
 }
