@@ -2,17 +2,19 @@ import {
   createNativeStackNavigator,
   NativeStackNavigationProp,
 } from "@react-navigation/native-stack";
-import { MenuPage, CharacterFormPage } from "../screens/index";
+import {
+  MenuPage,
+  CharacterAttributesPage,
+  CharacterItemsPage,
+} from "../screens/index";
 
 export type PagesListParams = {
   MenuPage: undefined;
-  CharacterFormPage: undefined;
+  CharacterAttributesPage: undefined;
+  CharacterItemsPage: undefined;
 };
 
-export type MenuPageProp = NativeStackNavigationProp<
-  PagesListParams,
-  "CharacterFormPage"
->;
+export type MenuPageProp = NativeStackNavigationProp<PagesListParams>;
 
 const Stack = createNativeStackNavigator<PagesListParams>();
 
@@ -25,8 +27,13 @@ const RootStackNavigation = () => {
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="CharacterFormPage"
-        component={CharacterFormPage}
+        name="CharacterAttributesPage"
+        component={CharacterAttributesPage}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="CharacterItemsPage"
+        component={CharacterItemsPage}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

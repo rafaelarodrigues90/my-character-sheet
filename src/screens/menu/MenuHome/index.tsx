@@ -4,13 +4,13 @@ import backgroundImg from "@assets/images/background.png";
 import * as styles from "./styles";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
-import RootStackNavigation, { MenuPageProp } from "@routes/RootStack";
+import { MenuPageProp } from "@routes/RootStack";
 
 const Menu: React.FC = () => {
   const navigation = useNavigation<MenuPageProp>();
 
   const handleNewCharacter = () => {
-    navigation.navigate("CharacterFormPage");
+    navigation.navigate("CharacterAttributesPage");
   };
 
   return (

@@ -1,18 +1,5 @@
 import styled from 'styled-components/native'
 
-export const ImageContainer = styled.View`
-  flex: 1;
-  justify-content: center;
-  margin: -20px -100px;
-  background: #f2f2f2;
-`
-
-export const Container = styled.View`
-  flex: 1;
-  padding: 110px;
-  justify-content: center;
-  margin: 70px 0px 70px 0px;
-`
 export const TitleContainer = styled.View`
   justify-content: center;
 `
@@ -32,7 +19,7 @@ export const MainContainer = styled.View`
 
 export const FormContainer = styled.View`
   flex-direction: row;
-  margin: 10px;
+  margin: 10px 15px;
 `
 
 export const FormText = styled.Text`
@@ -40,12 +27,27 @@ export const FormText = styled.Text`
   font-family: ${({ theme }) => theme.fontFamily.medievalSharp};
 `
 
-export const FormInput = styled.TextInput`
+export const ItemInput = styled.TextInput`
   font-size: 25px;
   font-family: ${({ theme }) => theme.fontFamily.medievalSharp};
-  margin-left: 10px;
+  border: 1px solid;
+  border-radius: 5px;
   text-transform: capitalize;
-  margin-right: 30px;
+  margin-right: 10px;
+  height: 81%;
+  width: 60%;
+`
+
+export const QuantityInput = styled.TextInput`
+  font-size: 25px;
+  font-family: ${({ theme }) => theme.fontFamily.medievalSharp};
+  border: 1px solid;
+  border-radius: 5px;
+  text-transform: capitalize;
+  margin-right: 10px;
+  text-align: center;
+  height: 81%;
+  width: 10%;
 `
 
 export const Separator = styled.View`
@@ -62,17 +64,17 @@ export const FooterContainer = styled.View`
   padding: 0px 30px 20px 30px;
 `
 
-export const ButtonContainer = styled.TouchableOpacity`
+export const InputButtonContainer = styled.TouchableOpacity`
   background: #fafafa;
   border: 2px solid black;
   border-radius: 5px;
-  padding: 8px 20px;
-  width: 120px;
-  margin: 5px;
+  padding: 5px 20px;
+  width: 85px;
+  height: 30px;
 `
 
-export const ButtonText = styled.Text`
-  font-size: 20px;
+export const InputButtonText = styled.Text`
+  font-size: 15px;
   text-transform: uppercase;
   color: black;
   text-align: center;
