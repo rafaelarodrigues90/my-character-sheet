@@ -26,15 +26,11 @@ const Menu: React.FC = () => {
         >
           <styles.MainContainer>
             <styles.MenuTitle>RPG{"\n"}Character Sheet</styles.MenuTitle>
-            <styles.ButtonContainer>
-              <styles.ButtonText onPress={handleNewCharacter}>
-                new character
-              </styles.ButtonText>
+            <styles.ButtonContainer onPress={handleNewCharacter}>
+              <styles.ButtonText>new character</styles.ButtonText>
             </styles.ButtonContainer>
-            <styles.ButtonContainer>
-              <styles.ButtonText onPress={() => {}}>
-                load character
-              </styles.ButtonText>
+            <styles.ButtonContainer onPress={() => {}}>
+              <styles.ButtonText>load character</styles.ButtonText>
             </styles.ButtonContainer>
           </styles.MainContainer>
         </ImageBackground>
