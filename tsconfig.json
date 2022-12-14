@@ -9,7 +9,7 @@
         "./src/assets/*"
       ],
       "@components/*": [
-        "./src/components/*"
+        "src/components/*"
       ],
       "@routes/*": [
         "./src/routes/*"

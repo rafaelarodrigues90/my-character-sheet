@@ -13,7 +13,6 @@ const CharacterAttributes: React.FC = () => {
     <SafeAreaView style={{ flex: 1 }}>
       <CreateCharacterBackground>
         <styles.TitleContainer>
-          {/* TODO: adicionar imagem/dado */}
           <styles.Title>character</styles.Title>
         </styles.TitleContainer>
         <Formik
