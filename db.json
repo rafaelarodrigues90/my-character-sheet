@@ -1,0 +1,32 @@
+{
+  "characters": [
+    {
+      "name": "Demogorgon",
+      "class": "Demon",
+      "level": 1,
+      "strength": 15,
+      "dexterity": 15,
+      "intelligence": 50,
+      "wisdom": 30,
+      "constitution": 2,
+      "charism": 0,
+      "armor_class": 15,
+      "hit_points": 15,
+      "attack_bonus": 23
+    },
+    {
+      "name": "Zephyr",
+      "class": "Ranger",
+      "level": 1,
+      "strength": 15,
+      "dexterity": 15,
+      "intelligence": 50,
+      "wisdom": 30,
+      "constitution": 2,
+      "charism": 0,
+      "armor_class": 15,
+      "hit_points": 15,
+      "attack_bonus": 23
+    }
+  ]
+}
